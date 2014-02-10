@@ -3,7 +3,7 @@
     "name": "Pinner",
     "description": "固定标签页就要完全固定住，别让网页跑了。",
     
-    "version": "1.0",
+    "version": "1.1",
     
     "permissions": [
         "tabs"
@@ -25,5 +25,6 @@
         "default_title": "Pinner"
     },
     
-    "icons": {"128": "icon.png"}
+    "icons": {"128": "icon.png"},
+    "update_url": "http://dramforever.github.io/pinner/update.xml"
 }

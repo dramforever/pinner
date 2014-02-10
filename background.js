@@ -22,3 +22,7 @@ chrome.pageAction.onClicked.addListener(function(tab){
     
     chrome.tabs.sendMessage(tab.id, {on: toggles[tab.id]});
 });
+
+chrome.runtime.onInstalled.addListener(function(details){
+    if(details.reason == "install") window.open("help.html");
+});
