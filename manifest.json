@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Pinner",
+    "description": "固定标签页就要完全固定住，别让网页跑了。",
+    
+    "version": "1.0",
+    
+    "permissions": [
+        "tabs"
+    ],
+    
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ],
+    
+    "background": {
+        "scripts": ["background.js"]
+    },
+  
+    "page_action": {
+        "default_icon": "action-unlock.png",
+        "default_title": "Pinner"
+    },
+    
+    "icons": {"128": "icon.png"}
+}
